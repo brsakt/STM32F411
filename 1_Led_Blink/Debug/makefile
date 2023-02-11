@@ -70,8 +70,8 @@ all: main-build
 main-build: 1_Led_Blink.elf secondary-outputs
 
 # Tool invocations
-1_Led_Blink.elf 1_Led_Blink.map: $(OBJS) $(USER_OBJS) C:\Users\aktur\STM32CubeIDE\workspace_stm32f411\1_Led_Blink\STM32F411VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "1_Led_Blink.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\aktur\STM32CubeIDE\workspace_stm32f411\1_Led_Blink\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1_Led_Blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+1_Led_Blink.elf 1_Led_Blink.map: $(OBJS) $(USER_OBJS) C:\Users\aktur\STM32CubeIDE\workspace_stm32f411\stm32f411\1_Led_Blink\STM32F411VETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "1_Led_Blink.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\aktur\STM32CubeIDE\workspace_stm32f411\stm32f411\1_Led_Blink\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="1_Led_Blink.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
