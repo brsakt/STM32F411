@@ -1,0 +1,10 @@
+17:35:20 **** Incremental Build of configuration Debug for project 5-ADC-EXTI ****
+make -j4 all 
+arm-none-eabi-size   5-ADC-EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32092	    152	   3664	  35908	   8c44	5-ADC-EXTI.elf
+Finished building: default.size.stdout
+ 
+
+17:35:21 Build Finished. 0 errors, 0 warnings. (took 515ms)
+

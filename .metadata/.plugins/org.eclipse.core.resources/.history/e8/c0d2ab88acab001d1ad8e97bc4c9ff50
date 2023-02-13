@@ -1,0 +1,13 @@
+/*
+ * button_exti.h
+ *
+ *  Created on: 13 Şub 2023
+ *      Author: aktur
+ */
+
+#ifndef INC_BUTTON_EXTI_H_
+#define INC_BUTTON_EXTI_H_
+
+int change;
+
+#endif /* INC_BUTTON_EXTI_H_ */

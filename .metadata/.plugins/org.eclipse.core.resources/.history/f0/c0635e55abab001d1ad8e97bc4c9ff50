@@ -1,0 +1,14 @@
+/*
+ * button_exti.c
+ *
+ *  Created on: 13 Şub 2023
+ *      Author: aktur
+ */
+
+
+#include "button_exti.h"
+#include "main.h"
+
+int main(){
+	change = 0;
+}
